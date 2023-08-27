@@ -25,6 +25,7 @@ const PlanDetails: FC<Props> = ({ navigation, route }) => {
 
     return (
         <StyledRoot
+            headerRapperStyle={{ paddingVertical: 0 }}
             Header={() => <PrimaryHeader
                 useFullWidth
                 ImageBg={YellowHeader}

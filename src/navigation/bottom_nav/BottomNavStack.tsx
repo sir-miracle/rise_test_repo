@@ -1,4 +1,4 @@
-import { Image, View, Text, StyleSheet } from 'react-native'
+import { Image, View, Text, StyleSheet, Platform } from 'react-native'
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { colors } from '../../theme/colors'
@@ -28,7 +28,7 @@ const BottomTabStack = () => {
                 tabBarInactiveTintColor: colors.darkGrayishBlue,
                 tabBarStyle: {
                     backgroundColor: colors.white,
-                    height: 70,
+                    height: Platform.OS == 'android' ? 70 : 100,
                     borderTopColor: colors.lightGrayishBlue2,
                     borderTopWidth: 1,
                     // paddingBottom: 10
